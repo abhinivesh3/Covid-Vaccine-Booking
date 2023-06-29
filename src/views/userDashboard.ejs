@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Dashboard</title>
+    <link href="/assets/style.css" rel="stylesheet" >
+  </head>
+  <body>
+    
+      <h1>User Dashboard</h1>
+      <h2>Vaccination Centres</h2>
+      <ul class="body">
+        <% centres.forEach(centre => { %>
+          <% if (centre.slotsAvailable > 0) { %>
+            <li>
+              <strong><%= centre.name %></strong><br />
+              Working Hours: <%= centre.workingHours %><br />
+              Slots Available: <%= centre.slotsAvailable %><br />
+              <form method="POST" action="/user/apply">
+                <input type="hidden" name="centreId" value="<%= centre._id %>" />
+                <button type="submit">Apply for Slot</button>
+              </form>
+            </li>
+          <% } %>
+        <% }) %>
+      </ul>
+      <ul class="body">
+        <a href="/user/logout">Logout</a>
+      </ul>
+    
+  </body>
+</html>
