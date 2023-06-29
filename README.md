@@ -25,7 +25,7 @@ The COVID Vaccine Booking System is a web-based application designed to streamli
 ## Technologies Used
 The COVID Vaccine Booking System is built using the following technologies:
 
-- Frontend: html
+- Frontend: html ,css
 - Backend: Node.js, Express.js
 - Database: MongoDB
 - Templating Engine: EJS
