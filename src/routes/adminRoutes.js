@@ -7,11 +7,8 @@ router.get('/',(req,res)=>{
     res.render('adminLogin')
 })
 
-// get admin Login Page
-router.get('/login', adminController.getAdminLoginPage);
-
-// post create login
-router.post('/login', adminController.login);
+// get admin Login Page and post create login
+router.get('/login', adminController.getAdminLoginPage).post('/login', adminController.login);
 
 // get  logout
 router.get('/logout', adminController.logout);
