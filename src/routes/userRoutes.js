@@ -12,22 +12,16 @@ router.get('/login', (req, res) => {
     res.render('login');
 });
 
-// Get Login Page
-router.get('/login', userController.getLoginPage);
+// Get Login Page and  Post create Login
+router.get('/login', userController.getLoginPage).post('/login', userController.login);
 
-// Post create Login
-router.post('/login', userController.login);
-
-// get signup into user
+// Get signup into user
 router.get('/signup', (req, res) => {
     res.render('signup');
 });
 
-// get user signup page
-router.get('/signup', userController.getSignupPage);
-
-// post create user signup
-router.post('/signup', userController.signup);
+// get user signup page and Post create user signup
+router.get('/signup', userController.getSignupPage).post('/signup', userController.signup);
 
 // get logout for user
 router.get('/logout', userController.logout);
