@@ -17,11 +17,13 @@ This repository contains the code for a COVID vaccination booking system. It pro
 
 ## Technologies Used
 
+- HTML
+- CSS
+- EJS
 - Node.js
 - Express.js
 - MongoDB
 - Mongoose
-- bcrypt
 
 ## Installation
 
