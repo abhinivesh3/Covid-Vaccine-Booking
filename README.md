@@ -1,55 +1,61 @@
-# Covid Vaccine Booking
+# COVID Vaccination Booking System
 
-# Project Documentation : COVID Vaccine Booking System
-
-## Introduction
-The COVID Vaccine Booking System is a web-based application designed to streamline the process of booking and managing COVID-19 vaccination appointments. This documentation provides an overview of the project, its features, installation instructions, and usage guidelines.
+This repository contains the code for a COVID vaccination booking system. It provides functionality for both administrators and users to manage and book vaccination slots.
 
 ## Features
-1. User Registration and Login:
-   - Users can create an account and log in to access the system.
-   - User authentication is implemented to ensure secure access.
 
-2. Booking Management:
-   - Users can view available time slots at vaccination centres and book an appointment.
-   - Booking confirmation and appointment details are displayed to the user.
+- **Admin Panel**
+  - Admin login
+  - Dashboard with search functionality
+  - Add and remove vaccination centers
+  - View dosage details
 
-3. Admin Dashboard:
-   - An admin dashboard is available to manage vaccination centres and appointments.
-   - Admins can add new centres, update centre information, and track appointment statistics.
-
-4. Dosage Distribution Tracking:
-   - The system tracks the distribution of vaccine dosages across centres.
-   - Admins can view dosage counts and monitor distribution trends.
+- **User Interface**
+  - User login and signup
+  - Search for vaccination centers based on criteria
+  - Apply for vaccination slots
 
 ## Technologies Used
-The COVID Vaccine Booking System is built using the following technologies:
-
-- Frontend: html ,css
-- Backend: Node.js, Express.js
-- Database: MongoDB
-- Templating Engine: EJS
-- Authentication: Passport.js
-- Data Modeling: Mongoose
-
-## System Requirements
-Before setting up the COVID Vaccine Booking System, ensure that your system meets the following requirements:
 
 - Node.js
+- Express.js
 - MongoDB
-- Web browser
+- Mongoose
+- bcrypt
 
+## Installation
 
-## Usage Guide
-Once the COVID Vaccine Booking System is set up, follow these steps to use the application:
+1. Clone the repository:
 
-1. Launch the application by accessing the provided URL.
-2. Register a new user account or log in with existing credentials.
-3. Search for vaccination centres based on location and availability.
-4. View centre details, including working hours and available slots.
-5. Book a vaccination appointment by selecting a suitable time slot.
-6. Admins can access the admin dashboard to manage centres and appointments.
-7. Log out from the application when finished.
+git clone https://github.com/abhinivesh3/Covid-Vaccine-Booking
 
-## Conclusion
-The COVID Vaccine Booking System aims to simplify the process of booking and managing vaccination appointments. By providing a user-friendly interface and robust features, the system ensures a smooth experience for users and efficient management for administrators.
+2. Install the dependencies:
+
+cd covid-vaccination-booking
+npm install
+
+3. Set up the MongoDB database connection in the `.env` file.
+
+4. Start the application:
+
+npm start
+
+5. Open your browser and navigate to `http://localhost:3000` to access the application.
+
+## Usage
+
+- Admin Panel:
+- Access the admin login page at `/admin/login` to log in as an administrator.
+- Once logged in, you can manage vaccination centers, view dosage details, and perform other administrative tasks.
+
+- User Interface:
+- Access the user login page at `/user/login` to log in as a user or sign up for a new account.
+- Once logged in, you can search for vaccination centers, view available slots, and apply for a slot.
+
+## Contribution
+
+Contributions to the COVID Vaccination Booking System are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
