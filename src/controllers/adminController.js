@@ -86,7 +86,8 @@ exports.getDosageDetails = async (req, res) => {
       },
       {
         $lookup: {
-          from: 'centres', // Assuming the collection name for centres is 'centres'
+          from: 'centres',
+          // Assuming the collection name for centres is 'centres'
           localField: '_id',
           foreignField: '_id',
           as: 'centre'
