@@ -7,28 +7,28 @@ router.get('/',(req,res)=>{
     res.render('adminLogin')
 })
 
-//get admin Login Page
+// get admin Login Page
 router.get('/login', adminController.getAdminLoginPage);
 
-//post create login
+// post create login
 router.post('/login', adminController.login);
 
-//get  logout
+// get  logout
 router.get('/logout', adminController.logout);
 
-//get Dashboard Page
+// get Dashboard Page
 router.get('/dashboard', adminController.getDashboardPage);
 
-//get Search Page to admin main page
+// get Search Page to admin main page
 router.get('/search', adminController.getSearchPage);
 
-//post create for Centre
+// post create for Centre
 router.post('/centres', adminController.addCentre);
 
-//get Dosage Details
+// get Dosage Details
 router.get('/dosage', adminController.getDosageDetails);
 
-//post create for remove centre
+// post create for remove centre
 router.post('/remove-centre', adminController.removeCentre);
 
 module.exports = router;
